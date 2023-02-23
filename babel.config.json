@@ -1,0 +1,31 @@
+// {
+// 	// useBuiltIns 默认false
+// 	"presets": ["@babel/preset-env"],
+// 	// corejs不指定
+// 	"plugins": ["@babel/plugin-transform-runtime"]
+// }
+
+// {
+// 	"presets": [
+// 		[
+// 			"@babel/preset-env",
+// 			{
+// 				"useBuiltIns": "usage",
+// 				"corejs": 3
+// 			}
+// 		]
+// 	],
+// 	"plugins": ["@babel/plugin-transform-runtime"]
+// }
+
+{
+	"presets": ["@babel/preset-env"],
+	"plugins": [
+		[
+			"@babel/plugin-transform-runtime",
+			{
+				"corejs": 3
+			}
+		]
+	]
+}
